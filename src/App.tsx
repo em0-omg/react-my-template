@@ -1,6 +1,8 @@
 const App = () => {
   return (
-    <div><h2>React My Template</h2></div>
+    <div>
+      <h2>React My Template</h2>
+    </div>
   )
 }
 
