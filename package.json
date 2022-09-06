@@ -9,13 +9,19 @@
     "preview": "vite preview",
     "lint": "eslint --ext .tsx,.ts src/",
     "lintfix": "eslint --fix --ext .tsx,.ts src/",
-    "format": "prettier --write \"**/*.+(js|json|yml|ts|tsx)\""
+    "format": "prettier --write \"**/*.+(js|json|yml|ts|tsx)\"",
+    "test": "jest --config ./jest.config.json",
+    "test:watch": "npm run test -- --watch"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.0.0",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
@@ -25,11 +31,17 @@
     "eslint-config-standard-with-typescript": "^22.0.0",
     "eslint-import-resolver-typescript": "^3.5.0",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.0.1",
+    "eslint-plugin-jest-dom": "^4.0.2",
     "eslint-plugin-n": "^15.2.5",
     "eslint-plugin-promise": "^6.0.1",
     "eslint-plugin-react": "^7.31.7",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-testing-library": "^5.6.1",
+    "jest": "^28.0.2",
+    "jest-environment-jsdom": "^29.0.2",
     "prettier": "^2.7.1",
+    "ts-jest": "^28.0.8",
     "typescript": "^4.8.2",
     "vite": "^3.1.0"
   }

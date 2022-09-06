@@ -11,10 +11,21 @@ plugins:
   - react
   - react-hooks
   - '@typescript-eslint'
+  - jest
+  - jest-dom
+  - testing-library
 extends:
   - plugin:react/recommended
   - plugin:react-hooks/recommended
   - prettier
+overrides:
+  - files:
+      - '**/__tests__/**/*.+(ts|tsx|js)'
+      - '**/?(*.)+(spec|test).+(ts|tsx|js)'
+    extends:
+      - plugin:jest/recommended
+      - plugin:jest-dom/recommended
+      - plugin:testing-library/react
 ignorePatterns:
   - vite.config.ts
 rules:
