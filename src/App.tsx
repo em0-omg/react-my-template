@@ -1,7 +1,7 @@
 const App = () => {
   return (
     <div>
-      <h2>React My Template</h2>
+      <h2 className="text-blue-400">React My Template</h2>
     </div>
   )
 }
